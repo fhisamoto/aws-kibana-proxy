@@ -1,0 +1,7 @@
+web:
+  image: node:5.7.1
+  volumes:
+    - .:/app
+  working_dir: /app
+  ports:
+    - 80:80

@@ -1,0 +1,18 @@
+{
+  "name": "kibana-proxy",
+  "private": true,
+  "main": "app.js",
+  "dependencies": {
+    "http-proxy": "1.13.2",
+    "express": "4.13.4",
+    "aws-sdk": "2.2.41",
+    "body-parser": "1.15.0",
+    "request": "2.69.0",
+    "client-sessions": "0.7.0",
+    "passport": "*",
+    "passport-google-oauth": "*"
+  },
+  "scripts": {
+    "start": "node proxy.js"
+  }
+}

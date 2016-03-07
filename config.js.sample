@@ -1,0 +1,18 @@
+module.exports = {
+  'session_secret': 'dont share the secret',
+  'port': 8080,
+  'es': {
+    'host': 'the-search-host.us-east-1.es.amazonaws.com',
+    'region': 'us-east-1',
+    'credentials': {
+      accessKeyId: 'access_key_id',
+      secretAccessKey: 'secret_access_key'
+    }
+  },
+  'auth': {
+    'host': 'myhost.com',
+    'oauth_client_id': 'my_client_id.apps.googleusercontent.com',
+    'oauth_client_secret': 'oauth_secret',
+    'allowed_domain': 'myoauthdomain.com',
+  }
+}
