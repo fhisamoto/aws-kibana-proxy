@@ -9,6 +9,7 @@
     "body-parser": "1.15.0",
     "request": "2.69.0",
     "client-sessions": "0.7.0",
+    "command-line-args": "2.1.6",
     "passport": "*",
     "passport-google-oauth": "*"
   },
