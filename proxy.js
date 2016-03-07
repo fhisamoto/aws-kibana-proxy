@@ -1,11 +1,20 @@
+var commandLineArgs = require('command-line-args')
+var cli = commandLineArgs([
+  { name: 'config', alias: 'c', type: String }
+])
+
+var cmdLineOpts = cli.parse()
+if (cmdLineOpts.config) {
+  var config = JSON.parse(require('fs').readFileSync(cmdLineOpts.config, 'utf8'));
+}
+
 var http = require('http');
-var httpProxy = require('http-proxy');
+var httpProxy = require('http-proxy')
 var express = require('express');
-var bodyParser = require('body-parser');
+var bodyParser = require('body-parser')
 var stream = require('stream')
 var sessions = require("client-sessions")
 
-var config = require('./config.js')
 var AwsES = require('./lib/aws_es')
 
 var awsEs = new AwsES(config.es)
