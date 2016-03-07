@@ -4,4 +4,4 @@ web:
     - .:/app
   working_dir: /app
   ports:
-    - 80:80
+    - 3000:80
