@@ -1,6 +1,6 @@
 {
   "session_secret": "dont share the secret",
-  "port": 8080,
+  "port": 3000,
   "es": {
     "host": "the-search-host.us-east-1.es.amazonaws.com",
     "region": "us-east-1",
