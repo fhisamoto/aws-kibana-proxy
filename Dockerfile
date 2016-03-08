@@ -8,4 +8,4 @@ RUN \
 
 RUN npm install -g pm2
 
-CMD pm2 -v && pm2 start -i $WORKERS --no-daemon --user app_user proxy.js -- --config /etc/aws-es-proxy/config.json
+CMD pm2 -v && pm2 start -i $WORKERS --no-daemon --user app_user proxy.js -- --config /conf/config.json
